@@ -17,6 +17,10 @@ HELP.md
 *.iml
 *.ipr
 
+### mvn ###
+mvnw*
+
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/

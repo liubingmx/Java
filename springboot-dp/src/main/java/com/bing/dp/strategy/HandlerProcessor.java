@@ -45,7 +45,7 @@ public class HandlerProcessor implements BeanFactoryPostProcessor, ApplicationCo
                 Class<Strategy> handler = (Class<Strategy>) ClassUtils.forName(beanClassName, this.getClass().getClassLoader());
                 HandlerType handlerType = handler.getAnnotation(HandlerType.class);
                 if (handlerType != null && handlers.containsKey(handlerType.value().getType() )) {
-                    throw new RuntimeException(String.format(" already exist handlerType 【%s】", handlerType.value()) );
+                    throw new RuntimeException(String.format(" already exist Strategy handlerType 【%s】", handlerType.value()) );
                 }
                 handlers.put(handlerType.value().getType(), applicationContext.getBean(handler));
             } catch (ClassNotFoundException var12) {

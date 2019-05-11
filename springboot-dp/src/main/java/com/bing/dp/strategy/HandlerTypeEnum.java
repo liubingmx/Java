@@ -3,7 +3,8 @@ package com.bing.dp.strategy;
 public enum HandlerTypeEnum {
 
     ADD(1, "add"),
-    MULTIPLY(2, "multiply");
+    SUB(2, "sub"),
+    MULTIPLY(3, "multiply");
 
     private int type;
     private String des;
